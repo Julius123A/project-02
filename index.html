@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Company</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.profile-cart {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.product-container {
+    display: flex;
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnail-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail-images img:hover, .thumbnail-images img:focus {
+    border-color: #e67e22;
+}
+
+.product-details {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.product-details h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.current-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-right: 10px;
+}
+
+.discount {
+    font-size: 16px;
+    color: #fff;
+    background-color: #e67e22;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.quantity input {
+    width: 50px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.quantity button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color:white;
+    cursor: pointer;
+}
+.quantity button:hover {
+color: #f0f0f0;
+}
+.add-to-cart button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart button:hover {
+    background-color: #d35400;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">sneakers</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="profile-cart">
+                <div class="cart">
+                    <img src="images/icon-cart.svg" alt="Cart Icon">
+                </div>
+                <div class="profile">
+                    <img src="images/image-avatar.png" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <img src="images/image-product-1.jpg" alt="Sneaker Main Image" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="Sneaker Thumbnail">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="Sneaker Thumbnail">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="Sneaker Thumbnail">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="Sneaker Thumbnail">
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <span class="current-price">$125.00</span>
+                    <span class="discount">50%</span>
+                    
+                </div>
+                <span class="original-price">$250.00</span>
+                <div class="add-to-cart">
+                    <div class="quantity">
+                        <button class="minus-btn" type="button">-</button>
+                        <input type="number" value="0" min="0">
+                        <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
